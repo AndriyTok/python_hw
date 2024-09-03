@@ -7,4 +7,4 @@
 # #################################################################################
 
 st = 'as 23 fdfdg544'
-print([int(i) for i in st if i.isdigit()])
+print(*[int(i) for i in st if i.isdigit()], sep=', ')
