@@ -6,3 +6,16 @@
 # #################################################################################
 
 st = 'as 23 fdfdg544 34'
+nums = ''
+i = 0
+
+while i < len(st):
+    if st[i].isdigit():
+        nums += st[i]
+    else:
+        if nums:
+            print(nums, end=', ')
+            nums = ''
+    i += 1
+if nums:
+    print(nums)
