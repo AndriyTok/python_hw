@@ -22,9 +22,6 @@ def bits_sum(num:any)->str:
 
 while True:
     number = input('Enter a number: ')
-    if type(number)==str:
-        print('Enter number')
-        continue
     if -9 <= int(number) <= 9:
         print('Enter a valid number')
         continue
