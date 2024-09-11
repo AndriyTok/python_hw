@@ -13,16 +13,16 @@ class Human(ABC):
         self.age:int = age
 
 class Cinderella(Human):
-    count = 0 # variable for counting
+    __count = 0 # variable for counting
 
     def __init__(self, name, age, foot_size):
         super().__init__(name, age)
         self.foot_size:int = foot_size
-        Cinderella.count += 1 #increasing count
+        Cinderella.__count += 1 #increasing count
 
     @classmethod
     def get_count(cls):
-        return cls.count
+        return cls.__count
 
 
 class Prince(Human):
@@ -45,4 +45,4 @@ cinderellas:list[Cinderella] = [
 
 prince = Prince('Alex', 35, 35)
 prince.__find__(cinderellas)
-print(Cinderella.count)
+print(Cinderella.get_count())
