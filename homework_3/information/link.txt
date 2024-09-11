@@ -1,0 +1,2 @@
+https://www.tutorialsteacher.com/python/magic-methods-in-python
+
